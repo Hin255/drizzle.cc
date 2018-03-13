@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+{% block head %}
+<head>
+    <meta charset="UTF-8">
+    {% block title %}
+    <title>Hannah社区</title>
+    {% endblock title %}
+    <link rel="stylesheet" href="/static/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/static/css/index.setting.css">
+    <link rel="stylesheet" href="/static/css/style.css">
+    <link rel="icon" href="/static/favicon.ico" type="web_ico">
+    <script src="/static/js/jquery-3.3.1.min.js"></script>
+    <script src="/static/js/dropzone.js"></script>
+    <script src="/static/js/about_index.js"></script>
+    <script src="/static/js/login_index.js"></script>
+    <script src="/static/js/index.js"></script>
+</head>
+{% endblock head %}
+<body>
+<div class='navbar'>
+  <div class='navbar-inner'>
+    <div class='container'>
+      <a class='brand' href='/'>
+
+          <!--<img src="//o4j806krb.qnssl.com/public/images/cnodejs_light.svg" />-->
+          <img src="/static/favicon.ico" width="33" />
+      </a>
+
+      <form id='search_form' class='navbar-search' method="post" action="/search">
+          <input type='text' id='q' name='question' class='search-query span3'/>
+
+      </form>
+      <ul class='nav pull-right'>
+        <li><a href='/'>首页</a></li>
+        {% if user %}
+        <li>
+            <a href='/mail'>
+              未读消息
+            </a>
+        </li>
+        {% endif %}
+        {% if user %}
+        <li>
+            <a href="/profile/{{ user.username }}">
+              我的主页
+            </a>
+        </li>
+        {% endif %}
+
+        <li><a href="/about" target="">关于</a></li>
+
+        {% if user %}
+            <li><a href='/setting'>设置</a></li>
+            <li>
+              <a href='/signout' data-method="post" rel="nofollow">退出</a>
+            </li>
+        {% else %}
+            <li><a href='/signup'>注册</a></li>
+            <li>
+              <a href='/login' rel="nofollow">登录</a>
+            </li>
+        {% endif %}
+      </ul>
+      <a class="btn btn-navbar" id="responsive-sidebar-trigger">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </a>
+    </div>
+  </div>
+</div>
+
+{% block main %}
+{% endblock main %}
+</body>
+</html>

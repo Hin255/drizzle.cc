@@ -1,0 +1,230 @@
+{% extends "base.html" %}
+{% block main %}
+    {% block title %}
+    <title>{{ user.username }}</title>
+    {% endblock title %}
+<div id='main'>
+  <div id='sidebar'>
+
+  <div class='panel'>
+    
+    <div class='header'>
+      <span class='col_fade'>个人信息</span>
+    </div>
+    <div class='inner'>
+      <div class='user_card'>
+  <div>
+    <a class='user_avatar' href="/profile/{{ otheruser.username }}">
+      <img src="{{otheruser.user_image}}" title="{{ otheruser.username }}"/>
+    </a>
+    <span class='user_name'><a class='dark' href="/profile/{{ otheruser.username }}">{{ otheruser.username }}</a></span>
+
+    <div class='board clearfix'>
+      <!--<div class='floor'>-->
+        <!--<span class='big'>积分: 265 </span>-->
+      <!--</div>-->
+    </div>
+    <div class="space clearfix"></div>
+    <span class="signature">
+        “
+        
+            {{ otheruser.signature }}
+        
+        ”
+    </span>
+  </div>
+</div>
+
+
+<script>
+  $(document).ready(function () {
+    $('.follow_btn').click(function () {
+      var $me = $(this);
+      var action = $me.attr('action');
+      var params = {
+        follow_id: '58e261ed27d4e130201065f7',
+        _csrf: 'b5sh5emK-9M79KG5J6k1PRzie4B1_VDayBJE'
+      };
+      $.post('/user/' + action, params, function (data) {
+        if (data.status === 'success') {
+          var $btns = $('.follow_btn');
+          if (action === 'follow') {
+            $btns.html('取消关注');
+            $btns.attr('action', 'un_follow');
+          } else {
+            $btns.html('加入关注');
+            $btns.attr('action', 'follow');
+          }
+          $btns.toggleClass('btn-success');
+        }
+      }, 'json');
+    });
+  });
+</script>
+
+
+    </div>
+    
+  </div>
+
+  
+  <div class="panel">
+    <div class='inner'>
+      <a href='/topic/new/{{ bid }}' id='create_topic_btn'>
+        <span class='span-success'>发布话题</span>
+      </a>
+    </div>
+  </div>
+
+</div>
+
+
+<div id='content'>
+  <div class='panel'>
+    <div class='header'>
+      <ul class='breadcrumb'>
+        <li><a href='/'>主页</a><span class='divider'>/</span></li>
+      </ul>
+    </div>
+    <div class='inner userinfo'>
+      <div class='user_big_avatar'>
+        <img src="{{otheruser.user_image}}" class="user_avatar" title="{{ otheruser.username }}"/>
+      </div>
+      <a class='dark'>{{ otheruser.username }}</a>
+
+      <div class='user_profile'>
+        <ul class='unstyled'>
+          <li>
+            <a class='dark' href="/profile/{{ otheruser.username }}" target='_blank'>
+              <span class='big collect-topic-count'>{{ otheruser.topic_amount }}</span>个话题收藏
+            </a>
+          </li>
+          
+          
+          
+          
+          
+        </ul>
+      </div>
+      <p class='col_fade'>注册时间 {{ otheruser.time() }}</p>
+      
+    </div>
+  </div>
+
+  <div class='panel'>
+    <div class='header'>
+      <span class='col_fade'>个人所有文章</span>
+    </div>
+    {% for t in ms %}
+    <div class="cell">
+        <div class="topic_title_wrapper">
+
+            <a class="user_avatar pull-left" href="/profile/{{ t.user().username }}">
+                <img src="{{ t.user().user_image }}" title="{{ t.user().username }}"/>
+            </a>
+
+            <a class="topic_title" href="{{ url_for('topic.detail', id=t.id) }}">
+                {{ t.title }}
+            </a>
+            <span>{{ t.replies() | count }} / {{ t.views }}</span>
+            {% if t.user().id == user.id %}
+            <a class="topic_title" href="{{ url_for('topic.delete', id=t.id, token=token) }}">
+                删除
+            </a>
+            {% endif %}
+        </div>
+    </div>
+    {% endfor %}
+    <!--<div class='cell more'>-->
+      <!--<a class='dark' href="/profile/{{ otheruser.username }}/topics">查看更多»</a>-->
+    <!--</div>-->
+    
+  </div>
+  
+</div>
+
+
+<script>
+  $(document).ready(function () {
+    $('#set_star_btn').click(function () {
+      var $me = $(this);
+      var action = $me.attr('action');
+      var params = {
+        user_id: '58e261ed27d4e130201065f7',
+        _csrf: 'b5sh5emK-9M79KG5J6k1PRzie4B1_VDayBJE'
+      };
+      $.post('/user/' + action, params, function (data) {
+        if (data.status === 'success') {
+          if (action === 'set_star') {
+            $me.html('取消达人');
+            $me.attr('action', 'cancel_star');
+          } else {
+            $me.html('设为达人');
+            $me.attr('action', 'set_star');
+          }
+        }
+      }, 'json');
+    });
+
+    $('#set_block_btn').click(function () {
+      var $me = $(this);
+      var action = $me.attr('action');
+      var params = {
+        _csrf: 'b5sh5emK-9M79KG5J6k1PRzie4B1_VDayBJE',
+        action: action
+      };
+      if (action === 'set_block' && !confirm('确定要屏蔽该用户吗？')) {
+        return;
+      }
+      $.post('/user/phpsmarter/block', params, function (data) {
+        if (data.status === 'success') {
+          if (action === 'set_block') {
+            $me.html('取消屏蔽用户');
+            $me.attr('action', 'cancel_block');
+          } else if (action === 'cancel_block') {
+            $me.html('屏蔽用户');
+            $me.attr('action', 'set_block');
+          }
+        }
+      }, 'json');
+    })
+
+    $('#delete_all').click(function () {
+      var $me = $(this);
+      var params = {
+        _csrf: 'b5sh5emK-9M79KG5J6k1PRzie4B1_VDayBJE',
+      };
+      if (!confirm('确定要删除吗？（不会永久删除，只做标记位）')) {
+        return;
+      }
+      $.post('/user/phpsmarter/delete_all', params, function (data) {
+        if (data.status === 'success') {
+          alert('操作成功');
+        }
+      }, 'json');
+    })
+  });
+</script>
+
+
+</div>
+<div id='backtotop'>回到顶部</div>
+
+
+<script>
+  // google analytics
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script', "https://www.google-analytics.com/analytics.js",'ga');
+
+  ga('create', 'UA-41753901-5', 'auto');
+  ga('send', 'pageview');
+</script>
+
+
+
+<div style="display:none;">
+  <script src="//s95.cnzz.com/z_stat.php?id=1254020586&web_id=1254020586" language="JavaScript"></script>
+</div>
+{% endblock main%}

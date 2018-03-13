@@ -1,0 +1,11 @@
+server {
+    listen 80;
+    #if ($host = drizzle.cc) {
+     #   return 301 https://$host$request_uri;
+    #} # managed by Certbot
+    location / {
+	proxy_pass http://localhost:2001;
+    }
+    ssl_certificate /etc/letsencrypt/live/drizzle.cc/fullchain.pem; # managed by Certbot
+    ssl_certificate_key /etc/letsencrypt/live/drizzle.cc/privkey.pem; # managed by Certbot
+}

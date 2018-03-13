@@ -1,0 +1,752 @@
+2018-03-12T18:28:04.796+0000 [initandlisten] MongoDB starting : pid=5421 port=27023 dbpath=/root/web_hannah/data/db 64-bit host=vultr.guest
+2018-03-12T18:28:04.796+0000 [initandlisten] db version v2.6.10
+2018-03-12T18:28:04.796+0000 [initandlisten] git version: nogitversion
+2018-03-12T18:28:04.796+0000 [initandlisten] OpenSSL version: OpenSSL 1.0.2g  1 Mar 2016
+2018-03-12T18:28:04.796+0000 [initandlisten] build info: Linux lgw01-12 3.19.0-25-generic #26~14.04.1-Ubuntu SMP Fri Jul 24 21:16:20 UTC 2015 x86_64 BOOST_LIB_VERSION=1_58
+2018-03-12T18:28:04.796+0000 [initandlisten] allocator: tcmalloc
+2018-03-12T18:28:04.796+0000 [initandlisten] options: { net: { port: 27023 }, storage: { dbPath: "/root/web_hannah/data/db" }, systemLog: { destination: "file", path: "/root/web_hannah/log/mongod.log" } }
+2018-03-12T18:28:04.803+0000 [initandlisten] journal dir=/root/web_hannah/data/db/journal
+2018-03-12T18:28:04.803+0000 [initandlisten] recover : no journal files present, no recovery needed
+2018-03-12T18:28:04.863+0000 [initandlisten] waiting for connections on port 27023
+2018-03-12T18:28:05.162+0000 [initandlisten] connection accepted from 127.0.0.1:49114 #1 (1 connection now open)
+2018-03-12T18:28:22.985+0000 [initandlisten] connection accepted from 127.0.0.1:49124 #2 (2 connections now open)
+2018-03-12T18:29:04.872+0000 [clientcursormon] mem (MB) res:59 virt:541
+2018-03-12T18:29:04.872+0000 [clientcursormon]  mapped (incl journal view):320
+2018-03-12T18:29:04.872+0000 [clientcursormon]  connections:2
+2018-03-12T18:34:04.886+0000 [clientcursormon] mem (MB) res:59 virt:541
+2018-03-12T18:34:04.886+0000 [clientcursormon]  mapped (incl journal view):320
+2018-03-12T18:34:04.886+0000 [clientcursormon]  connections:2
+2018-03-12T18:39:04.900+0000 [clientcursormon] mem (MB) res:59 virt:541
+2018-03-12T18:39:04.900+0000 [clientcursormon]  mapped (incl journal view):320
+2018-03-12T18:39:04.900+0000 [clientcursormon]  connections:2
+2018-03-12T18:44:04.914+0000 [clientcursormon] mem (MB) res:59 virt:541
+2018-03-12T18:44:04.914+0000 [clientcursormon]  mapped (incl journal view):320
+2018-03-12T18:44:04.914+0000 [clientcursormon]  connections:2
+2018-03-12T18:49:04.928+0000 [clientcursormon] mem (MB) res:59 virt:541
+2018-03-12T18:49:04.928+0000 [clientcursormon]  mapped (incl journal view):320
+2018-03-12T18:49:04.928+0000 [clientcursormon]  connections:2
+2018-03-12T18:54:04.942+0000 [clientcursormon] mem (MB) res:59 virt:541
+2018-03-12T18:54:04.942+0000 [clientcursormon]  mapped (incl journal view):320
+2018-03-12T18:54:04.942+0000 [clientcursormon]  connections:2
+2018-03-12T18:59:04.956+0000 [clientcursormon] mem (MB) res:59 virt:541
+2018-03-12T18:59:04.956+0000 [clientcursormon]  mapped (incl journal view):320
+2018-03-12T18:59:04.956+0000 [clientcursormon]  connections:2
+2018-03-12T19:04:04.971+0000 [clientcursormon] mem (MB) res:59 virt:541
+2018-03-12T19:04:04.971+0000 [clientcursormon]  mapped (incl journal view):320
+2018-03-12T19:04:04.971+0000 [clientcursormon]  connections:2
+2018-03-12T19:09:04.986+0000 [clientcursormon] mem (MB) res:59 virt:541
+2018-03-12T19:09:04.986+0000 [clientcursormon]  mapped (incl journal view):320
+2018-03-12T19:09:04.986+0000 [clientcursormon]  connections:2
+2018-03-12T19:14:05.000+0000 [clientcursormon] mem (MB) res:59 virt:541
+2018-03-12T19:14:05.000+0000 [clientcursormon]  mapped (incl journal view):320
+2018-03-12T19:14:05.000+0000 [clientcursormon]  connections:2
+2018-03-12T19:19:05.013+0000 [clientcursormon] mem (MB) res:59 virt:541
+2018-03-12T19:19:05.014+0000 [clientcursormon]  mapped (incl journal view):320
+2018-03-12T19:19:05.014+0000 [clientcursormon]  connections:2
+2018-03-12T19:24:05.028+0000 [clientcursormon] mem (MB) res:59 virt:541
+2018-03-12T19:24:05.028+0000 [clientcursormon]  mapped (incl journal view):320
+2018-03-12T19:24:05.028+0000 [clientcursormon]  connections:2
+2018-03-12T19:29:05.042+0000 [clientcursormon] mem (MB) res:59 virt:541
+2018-03-12T19:29:05.042+0000 [clientcursormon]  mapped (incl journal view):320
+2018-03-12T19:29:05.042+0000 [clientcursormon]  connections:2
+2018-03-12T19:34:05.055+0000 [clientcursormon] mem (MB) res:59 virt:541
+2018-03-12T19:34:05.055+0000 [clientcursormon]  mapped (incl journal view):320
+2018-03-12T19:34:05.055+0000 [clientcursormon]  connections:2
+2018-03-12T19:39:05.069+0000 [clientcursormon] mem (MB) res:59 virt:541
+2018-03-12T19:39:05.069+0000 [clientcursormon]  mapped (incl journal view):320
+2018-03-12T19:39:05.069+0000 [clientcursormon]  connections:2
+2018-03-12T19:44:05.083+0000 [clientcursormon] mem (MB) res:59 virt:541
+2018-03-12T19:44:05.084+0000 [clientcursormon]  mapped (incl journal view):320
+2018-03-12T19:44:05.084+0000 [clientcursormon]  connections:2
+2018-03-12T19:49:05.098+0000 [clientcursormon] mem (MB) res:59 virt:541
+2018-03-12T19:49:05.098+0000 [clientcursormon]  mapped (incl journal view):320
+2018-03-12T19:49:05.098+0000 [clientcursormon]  connections:2
+2018-03-12T19:54:05.112+0000 [clientcursormon] mem (MB) res:59 virt:541
+2018-03-12T19:54:05.113+0000 [clientcursormon]  mapped (incl journal view):320
+2018-03-12T19:54:05.113+0000 [clientcursormon]  connections:2
+2018-03-12T19:59:05.126+0000 [clientcursormon] mem (MB) res:59 virt:541
+2018-03-12T19:59:05.126+0000 [clientcursormon]  mapped (incl journal view):320
+2018-03-12T19:59:05.126+0000 [clientcursormon]  connections:2
+2018-03-12T20:04:05.140+0000 [clientcursormon] mem (MB) res:59 virt:541
+2018-03-12T20:04:05.140+0000 [clientcursormon]  mapped (incl journal view):320
+2018-03-12T20:04:05.140+0000 [clientcursormon]  connections:2
+2018-03-12T20:09:05.154+0000 [clientcursormon] mem (MB) res:59 virt:541
+2018-03-12T20:09:05.155+0000 [clientcursormon]  mapped (incl journal view):320
+2018-03-12T20:09:05.155+0000 [clientcursormon]  connections:2
+2018-03-12T20:14:05.169+0000 [clientcursormon] mem (MB) res:59 virt:541
+2018-03-12T20:14:05.169+0000 [clientcursormon]  mapped (incl journal view):320
+2018-03-12T20:14:05.169+0000 [clientcursormon]  connections:2
+2018-03-12T20:19:05.183+0000 [clientcursormon] mem (MB) res:59 virt:541
+2018-03-12T20:19:05.183+0000 [clientcursormon]  mapped (incl journal view):320
+2018-03-12T20:19:05.183+0000 [clientcursormon]  connections:2
+2018-03-12T20:24:05.197+0000 [clientcursormon] mem (MB) res:59 virt:541
+2018-03-12T20:24:05.198+0000 [clientcursormon]  mapped (incl journal view):320
+2018-03-12T20:24:05.198+0000 [clientcursormon]  connections:2
+2018-03-12T20:29:05.212+0000 [clientcursormon] mem (MB) res:59 virt:541
+2018-03-12T20:29:05.212+0000 [clientcursormon]  mapped (incl journal view):320
+2018-03-12T20:29:05.212+0000 [clientcursormon]  connections:2
+2018-03-12T20:34:05.226+0000 [clientcursormon] mem (MB) res:59 virt:541
+2018-03-12T20:34:05.226+0000 [clientcursormon]  mapped (incl journal view):320
+2018-03-12T20:34:05.226+0000 [clientcursormon]  connections:2
+2018-03-12T20:39:05.240+0000 [clientcursormon] mem (MB) res:59 virt:541
+2018-03-12T20:39:05.241+0000 [clientcursormon]  mapped (incl journal view):320
+2018-03-12T20:39:05.241+0000 [clientcursormon]  connections:2
+2018-03-12T20:44:05.254+0000 [clientcursormon] mem (MB) res:59 virt:541
+2018-03-12T20:44:05.255+0000 [clientcursormon]  mapped (incl journal view):320
+2018-03-12T20:44:05.255+0000 [clientcursormon]  connections:2
+2018-03-12T20:49:05.270+0000 [clientcursormon] mem (MB) res:59 virt:541
+2018-03-12T20:49:05.270+0000 [clientcursormon]  mapped (incl journal view):320
+2018-03-12T20:49:05.270+0000 [clientcursormon]  connections:2
+2018-03-12T20:54:05.285+0000 [clientcursormon] mem (MB) res:59 virt:541
+2018-03-12T20:54:05.285+0000 [clientcursormon]  mapped (incl journal view):320
+2018-03-12T20:54:05.285+0000 [clientcursormon]  connections:2
+2018-03-12T20:59:05.298+0000 [clientcursormon] mem (MB) res:59 virt:541
+2018-03-12T20:59:05.298+0000 [clientcursormon]  mapped (incl journal view):320
+2018-03-12T20:59:05.298+0000 [clientcursormon]  connections:2
+2018-03-12T21:04:05.313+0000 [clientcursormon] mem (MB) res:59 virt:541
+2018-03-12T21:04:05.313+0000 [clientcursormon]  mapped (incl journal view):320
+2018-03-12T21:04:05.313+0000 [clientcursormon]  connections:2
+2018-03-12T21:09:05.327+0000 [clientcursormon] mem (MB) res:59 virt:541
+2018-03-12T21:09:05.327+0000 [clientcursormon]  mapped (incl journal view):320
+2018-03-12T21:09:05.327+0000 [clientcursormon]  connections:2
+2018-03-12T21:14:05.342+0000 [clientcursormon] mem (MB) res:59 virt:541
+2018-03-12T21:14:05.342+0000 [clientcursormon]  mapped (incl journal view):320
+2018-03-12T21:14:05.342+0000 [clientcursormon]  connections:2
+2018-03-12T21:19:05.356+0000 [clientcursormon] mem (MB) res:59 virt:541
+2018-03-12T21:19:05.356+0000 [clientcursormon]  mapped (incl journal view):320
+2018-03-12T21:19:05.356+0000 [clientcursormon]  connections:2
+2018-03-12T21:24:05.369+0000 [clientcursormon] mem (MB) res:59 virt:541
+2018-03-12T21:24:05.370+0000 [clientcursormon]  mapped (incl journal view):320
+2018-03-12T21:24:05.370+0000 [clientcursormon]  connections:2
+2018-03-12T21:29:05.384+0000 [clientcursormon] mem (MB) res:59 virt:541
+2018-03-12T21:29:05.385+0000 [clientcursormon]  mapped (incl journal view):320
+2018-03-12T21:29:05.385+0000 [clientcursormon]  connections:2
+2018-03-12T21:34:05.399+0000 [clientcursormon] mem (MB) res:59 virt:541
+2018-03-12T21:34:05.399+0000 [clientcursormon]  mapped (incl journal view):320
+2018-03-12T21:34:05.399+0000 [clientcursormon]  connections:2
+2018-03-12T21:39:05.413+0000 [clientcursormon] mem (MB) res:59 virt:541
+2018-03-12T21:39:05.413+0000 [clientcursormon]  mapped (incl journal view):320
+2018-03-12T21:39:05.413+0000 [clientcursormon]  connections:2
+2018-03-12T21:44:05.427+0000 [clientcursormon] mem (MB) res:59 virt:541
+2018-03-12T21:44:05.427+0000 [clientcursormon]  mapped (incl journal view):320
+2018-03-12T21:44:05.427+0000 [clientcursormon]  connections:2
+2018-03-12T21:49:05.441+0000 [clientcursormon] mem (MB) res:59 virt:541
+2018-03-12T21:49:05.442+0000 [clientcursormon]  mapped (incl journal view):320
+2018-03-12T21:49:05.442+0000 [clientcursormon]  connections:2
+2018-03-12T21:54:05.455+0000 [clientcursormon] mem (MB) res:59 virt:541
+2018-03-12T21:54:05.455+0000 [clientcursormon]  mapped (incl journal view):320
+2018-03-12T21:54:05.455+0000 [clientcursormon]  connections:2
+2018-03-12T21:59:05.471+0000 [clientcursormon] mem (MB) res:59 virt:541
+2018-03-12T21:59:05.471+0000 [clientcursormon]  mapped (incl journal view):320
+2018-03-12T21:59:05.471+0000 [clientcursormon]  connections:2
+2018-03-12T22:04:05.486+0000 [clientcursormon] mem (MB) res:59 virt:541
+2018-03-12T22:04:05.486+0000 [clientcursormon]  mapped (incl journal view):320
+2018-03-12T22:04:05.486+0000 [clientcursormon]  connections:2
+2018-03-12T22:09:05.500+0000 [clientcursormon] mem (MB) res:59 virt:541
+2018-03-12T22:09:05.500+0000 [clientcursormon]  mapped (incl journal view):320
+2018-03-12T22:09:05.500+0000 [clientcursormon]  connections:2
+2018-03-12T22:14:05.514+0000 [clientcursormon] mem (MB) res:59 virt:541
+2018-03-12T22:14:05.514+0000 [clientcursormon]  mapped (incl journal view):320
+2018-03-12T22:14:05.514+0000 [clientcursormon]  connections:2
+2018-03-12T22:19:05.528+0000 [clientcursormon] mem (MB) res:59 virt:541
+2018-03-12T22:19:05.528+0000 [clientcursormon]  mapped (incl journal view):320
+2018-03-12T22:19:05.528+0000 [clientcursormon]  connections:2
+2018-03-12T22:24:05.542+0000 [clientcursormon] mem (MB) res:59 virt:541
+2018-03-12T22:24:05.542+0000 [clientcursormon]  mapped (incl journal view):320
+2018-03-12T22:24:05.542+0000 [clientcursormon]  connections:2
+2018-03-12T22:29:05.559+0000 [clientcursormon] mem (MB) res:59 virt:541
+2018-03-12T22:29:05.560+0000 [clientcursormon]  mapped (incl journal view):320
+2018-03-12T22:29:05.560+0000 [clientcursormon]  connections:2
+2018-03-12T22:34:05.576+0000 [clientcursormon] mem (MB) res:59 virt:541
+2018-03-12T22:34:05.576+0000 [clientcursormon]  mapped (incl journal view):320
+2018-03-12T22:34:05.576+0000 [clientcursormon]  connections:2
+2018-03-12T22:39:05.592+0000 [clientcursormon] mem (MB) res:59 virt:541
+2018-03-12T22:39:05.592+0000 [clientcursormon]  mapped (incl journal view):320
+2018-03-12T22:39:05.592+0000 [clientcursormon]  connections:2
+2018-03-12T22:44:05.605+0000 [clientcursormon] mem (MB) res:59 virt:541
+2018-03-12T22:44:05.606+0000 [clientcursormon]  mapped (incl journal view):320
+2018-03-12T22:44:05.606+0000 [clientcursormon]  connections:2
+2018-03-12T22:49:05.620+0000 [clientcursormon] mem (MB) res:59 virt:541
+2018-03-12T22:49:05.621+0000 [clientcursormon]  mapped (incl journal view):320
+2018-03-12T22:49:05.621+0000 [clientcursormon]  connections:2
+2018-03-12T22:54:05.638+0000 [clientcursormon] mem (MB) res:59 virt:541
+2018-03-12T22:54:05.638+0000 [clientcursormon]  mapped (incl journal view):320
+2018-03-12T22:54:05.638+0000 [clientcursormon]  connections:2
+2018-03-12T22:59:05.652+0000 [clientcursormon] mem (MB) res:59 virt:541
+2018-03-12T22:59:05.653+0000 [clientcursormon]  mapped (incl journal view):320
+2018-03-12T22:59:05.653+0000 [clientcursormon]  connections:2
+2018-03-12T23:04:05.666+0000 [clientcursormon] mem (MB) res:59 virt:541
+2018-03-12T23:04:05.666+0000 [clientcursormon]  mapped (incl journal view):320
+2018-03-12T23:04:05.666+0000 [clientcursormon]  connections:2
+2018-03-12T23:09:05.680+0000 [clientcursormon] mem (MB) res:59 virt:541
+2018-03-12T23:09:05.680+0000 [clientcursormon]  mapped (incl journal view):320
+2018-03-12T23:09:05.680+0000 [clientcursormon]  connections:2
+2018-03-12T23:14:05.694+0000 [clientcursormon] mem (MB) res:59 virt:541
+2018-03-12T23:14:05.694+0000 [clientcursormon]  mapped (incl journal view):320
+2018-03-12T23:14:05.694+0000 [clientcursormon]  connections:2
+2018-03-12T23:19:05.708+0000 [clientcursormon] mem (MB) res:59 virt:541
+2018-03-12T23:19:05.708+0000 [clientcursormon]  mapped (incl journal view):320
+2018-03-12T23:19:05.708+0000 [clientcursormon]  connections:2
+2018-03-12T23:24:05.721+0000 [clientcursormon] mem (MB) res:59 virt:541
+2018-03-12T23:24:05.722+0000 [clientcursormon]  mapped (incl journal view):320
+2018-03-12T23:24:05.722+0000 [clientcursormon]  connections:2
+2018-03-12T23:29:05.735+0000 [clientcursormon] mem (MB) res:59 virt:541
+2018-03-12T23:29:05.736+0000 [clientcursormon]  mapped (incl journal view):320
+2018-03-12T23:29:05.736+0000 [clientcursormon]  connections:2
+2018-03-12T23:34:05.750+0000 [clientcursormon] mem (MB) res:59 virt:541
+2018-03-12T23:34:05.751+0000 [clientcursormon]  mapped (incl journal view):320
+2018-03-12T23:34:05.751+0000 [clientcursormon]  connections:2
+2018-03-12T23:39:05.765+0000 [clientcursormon] mem (MB) res:59 virt:541
+2018-03-12T23:39:05.765+0000 [clientcursormon]  mapped (incl journal view):320
+2018-03-12T23:39:05.765+0000 [clientcursormon]  connections:2
+2018-03-12T23:44:05.778+0000 [clientcursormon] mem (MB) res:59 virt:541
+2018-03-12T23:44:05.778+0000 [clientcursormon]  mapped (incl journal view):320
+2018-03-12T23:44:05.778+0000 [clientcursormon]  connections:2
+2018-03-12T23:49:05.791+0000 [clientcursormon] mem (MB) res:59 virt:541
+2018-03-12T23:49:05.791+0000 [clientcursormon]  mapped (incl journal view):320
+2018-03-12T23:49:05.791+0000 [clientcursormon]  connections:2
+2018-03-12T23:54:05.805+0000 [clientcursormon] mem (MB) res:59 virt:541
+2018-03-12T23:54:05.805+0000 [clientcursormon]  mapped (incl journal view):320
+2018-03-12T23:54:05.805+0000 [clientcursormon]  connections:2
+2018-03-12T23:59:05.819+0000 [clientcursormon] mem (MB) res:59 virt:541
+2018-03-12T23:59:05.820+0000 [clientcursormon]  mapped (incl journal view):320
+2018-03-12T23:59:05.820+0000 [clientcursormon]  connections:2
+2018-03-13T00:04:05.833+0000 [clientcursormon] mem (MB) res:59 virt:541
+2018-03-13T00:04:05.833+0000 [clientcursormon]  mapped (incl journal view):320
+2018-03-13T00:04:05.833+0000 [clientcursormon]  connections:2
+2018-03-13T00:09:05.846+0000 [clientcursormon] mem (MB) res:59 virt:541
+2018-03-13T00:09:05.846+0000 [clientcursormon]  mapped (incl journal view):320
+2018-03-13T00:09:05.846+0000 [clientcursormon]  connections:2
+2018-03-13T00:14:05.860+0000 [clientcursormon] mem (MB) res:59 virt:541
+2018-03-13T00:14:05.861+0000 [clientcursormon]  mapped (incl journal view):320
+2018-03-13T00:14:05.861+0000 [clientcursormon]  connections:2
+2018-03-13T00:19:05.875+0000 [clientcursormon] mem (MB) res:59 virt:541
+2018-03-13T00:19:05.875+0000 [clientcursormon]  mapped (incl journal view):320
+2018-03-13T00:19:05.875+0000 [clientcursormon]  connections:2
+2018-03-13T00:24:05.888+0000 [clientcursormon] mem (MB) res:59 virt:541
+2018-03-13T00:24:05.888+0000 [clientcursormon]  mapped (incl journal view):320
+2018-03-13T00:24:05.889+0000 [clientcursormon]  connections:2
+2018-03-13T00:29:05.902+0000 [clientcursormon] mem (MB) res:59 virt:541
+2018-03-13T00:29:05.902+0000 [clientcursormon]  mapped (incl journal view):320
+2018-03-13T00:29:05.902+0000 [clientcursormon]  connections:2
+2018-03-13T00:34:05.916+0000 [clientcursormon] mem (MB) res:59 virt:541
+2018-03-13T00:34:05.916+0000 [clientcursormon]  mapped (incl journal view):320
+2018-03-13T00:34:05.916+0000 [clientcursormon]  connections:2
+2018-03-13T00:39:05.929+0000 [clientcursormon] mem (MB) res:59 virt:541
+2018-03-13T00:39:05.930+0000 [clientcursormon]  mapped (incl journal view):320
+2018-03-13T00:39:05.930+0000 [clientcursormon]  connections:2
+2018-03-13T00:44:05.943+0000 [clientcursormon] mem (MB) res:59 virt:541
+2018-03-13T00:44:05.944+0000 [clientcursormon]  mapped (incl journal view):320
+2018-03-13T00:44:05.944+0000 [clientcursormon]  connections:2
+2018-03-13T00:49:05.957+0000 [clientcursormon] mem (MB) res:59 virt:541
+2018-03-13T00:49:05.957+0000 [clientcursormon]  mapped (incl journal view):320
+2018-03-13T00:49:05.957+0000 [clientcursormon]  connections:2
+2018-03-13T00:54:05.971+0000 [clientcursormon] mem (MB) res:59 virt:541
+2018-03-13T00:54:05.971+0000 [clientcursormon]  mapped (incl journal view):320
+2018-03-13T00:54:05.971+0000 [clientcursormon]  connections:2
+2018-03-13T00:59:05.984+0000 [clientcursormon] mem (MB) res:59 virt:541
+2018-03-13T00:59:05.985+0000 [clientcursormon]  mapped (incl journal view):320
+2018-03-13T00:59:05.985+0000 [clientcursormon]  connections:2
+2018-03-13T01:04:05.998+0000 [clientcursormon] mem (MB) res:59 virt:541
+2018-03-13T01:04:05.998+0000 [clientcursormon]  mapped (incl journal view):320
+2018-03-13T01:04:05.998+0000 [clientcursormon]  connections:2
+2018-03-13T01:09:06.013+0000 [clientcursormon] mem (MB) res:59 virt:541
+2018-03-13T01:09:06.013+0000 [clientcursormon]  mapped (incl journal view):320
+2018-03-13T01:09:06.013+0000 [clientcursormon]  connections:2
+2018-03-13T01:14:06.027+0000 [clientcursormon] mem (MB) res:59 virt:541
+2018-03-13T01:14:06.027+0000 [clientcursormon]  mapped (incl journal view):320
+2018-03-13T01:14:06.027+0000 [clientcursormon]  connections:2
+2018-03-13T01:19:06.041+0000 [clientcursormon] mem (MB) res:59 virt:541
+2018-03-13T01:19:06.041+0000 [clientcursormon]  mapped (incl journal view):320
+2018-03-13T01:19:06.041+0000 [clientcursormon]  connections:2
+2018-03-13T01:24:06.054+0000 [clientcursormon] mem (MB) res:59 virt:541
+2018-03-13T01:24:06.054+0000 [clientcursormon]  mapped (incl journal view):320
+2018-03-13T01:24:06.054+0000 [clientcursormon]  connections:2
+2018-03-13T01:29:06.068+0000 [clientcursormon] mem (MB) res:59 virt:541
+2018-03-13T01:29:06.068+0000 [clientcursormon]  mapped (incl journal view):320
+2018-03-13T01:29:06.068+0000 [clientcursormon]  connections:2
+2018-03-13T01:34:06.081+0000 [clientcursormon] mem (MB) res:59 virt:541
+2018-03-13T01:34:06.081+0000 [clientcursormon]  mapped (incl journal view):320
+2018-03-13T01:34:06.081+0000 [clientcursormon]  connections:2
+2018-03-13T01:39:06.095+0000 [clientcursormon] mem (MB) res:59 virt:541
+2018-03-13T01:39:06.095+0000 [clientcursormon]  mapped (incl journal view):320
+2018-03-13T01:39:06.095+0000 [clientcursormon]  connections:2
+2018-03-13T01:44:06.110+0000 [clientcursormon] mem (MB) res:59 virt:541
+2018-03-13T01:44:06.110+0000 [clientcursormon]  mapped (incl journal view):320
+2018-03-13T01:44:06.110+0000 [clientcursormon]  connections:2
+2018-03-13T01:49:06.125+0000 [clientcursormon] mem (MB) res:59 virt:541
+2018-03-13T01:49:06.125+0000 [clientcursormon]  mapped (incl journal view):320
+2018-03-13T01:49:06.125+0000 [clientcursormon]  connections:2
+2018-03-13T01:54:06.139+0000 [clientcursormon] mem (MB) res:59 virt:541
+2018-03-13T01:54:06.139+0000 [clientcursormon]  mapped (incl journal view):320
+2018-03-13T01:54:06.139+0000 [clientcursormon]  connections:2
+2018-03-13T01:59:06.154+0000 [clientcursormon] mem (MB) res:59 virt:541
+2018-03-13T01:59:06.154+0000 [clientcursormon]  mapped (incl journal view):320
+2018-03-13T01:59:06.154+0000 [clientcursormon]  connections:2
+2018-03-13T02:04:06.168+0000 [clientcursormon] mem (MB) res:59 virt:541
+2018-03-13T02:04:06.168+0000 [clientcursormon]  mapped (incl journal view):320
+2018-03-13T02:04:06.168+0000 [clientcursormon]  connections:2
+2018-03-13T02:09:06.182+0000 [clientcursormon] mem (MB) res:59 virt:541
+2018-03-13T02:09:06.182+0000 [clientcursormon]  mapped (incl journal view):320
+2018-03-13T02:09:06.182+0000 [clientcursormon]  connections:2
+2018-03-13T02:14:06.196+0000 [clientcursormon] mem (MB) res:59 virt:541
+2018-03-13T02:14:06.196+0000 [clientcursormon]  mapped (incl journal view):320
+2018-03-13T02:14:06.196+0000 [clientcursormon]  connections:2
+2018-03-13T02:19:06.209+0000 [clientcursormon] mem (MB) res:59 virt:541
+2018-03-13T02:19:06.210+0000 [clientcursormon]  mapped (incl journal view):320
+2018-03-13T02:19:06.210+0000 [clientcursormon]  connections:2
+2018-03-13T02:24:06.224+0000 [clientcursormon] mem (MB) res:59 virt:541
+2018-03-13T02:24:06.225+0000 [clientcursormon]  mapped (incl journal view):320
+2018-03-13T02:24:06.225+0000 [clientcursormon]  connections:2
+2018-03-13T02:29:06.238+0000 [clientcursormon] mem (MB) res:59 virt:541
+2018-03-13T02:29:06.238+0000 [clientcursormon]  mapped (incl journal view):320
+2018-03-13T02:29:06.238+0000 [clientcursormon]  connections:2
+2018-03-13T02:34:06.252+0000 [clientcursormon] mem (MB) res:59 virt:541
+2018-03-13T02:34:06.252+0000 [clientcursormon]  mapped (incl journal view):320
+2018-03-13T02:34:06.252+0000 [clientcursormon]  connections:2
+2018-03-13T02:39:06.266+0000 [clientcursormon] mem (MB) res:59 virt:541
+2018-03-13T02:39:06.266+0000 [clientcursormon]  mapped (incl journal view):320
+2018-03-13T02:39:06.266+0000 [clientcursormon]  connections:2
+2018-03-13T02:44:06.280+0000 [clientcursormon] mem (MB) res:59 virt:541
+2018-03-13T02:44:06.280+0000 [clientcursormon]  mapped (incl journal view):320
+2018-03-13T02:44:06.280+0000 [clientcursormon]  connections:2
+2018-03-13T02:49:06.294+0000 [clientcursormon] mem (MB) res:59 virt:541
+2018-03-13T02:49:06.294+0000 [clientcursormon]  mapped (incl journal view):320
+2018-03-13T02:49:06.294+0000 [clientcursormon]  connections:2
+2018-03-13T02:54:06.308+0000 [clientcursormon] mem (MB) res:59 virt:541
+2018-03-13T02:54:06.308+0000 [clientcursormon]  mapped (incl journal view):320
+2018-03-13T02:54:06.308+0000 [clientcursormon]  connections:2
+2018-03-13T02:59:06.322+0000 [clientcursormon] mem (MB) res:59 virt:541
+2018-03-13T02:59:06.323+0000 [clientcursormon]  mapped (incl journal view):320
+2018-03-13T02:59:06.323+0000 [clientcursormon]  connections:2
+2018-03-13T03:04:06.336+0000 [clientcursormon] mem (MB) res:59 virt:541
+2018-03-13T03:04:06.336+0000 [clientcursormon]  mapped (incl journal view):320
+2018-03-13T03:04:06.336+0000 [clientcursormon]  connections:2
+2018-03-13T03:09:06.350+0000 [clientcursormon] mem (MB) res:59 virt:541
+2018-03-13T03:09:06.350+0000 [clientcursormon]  mapped (incl journal view):320
+2018-03-13T03:09:06.350+0000 [clientcursormon]  connections:2
+2018-03-13T03:14:06.363+0000 [clientcursormon] mem (MB) res:59 virt:541
+2018-03-13T03:14:06.364+0000 [clientcursormon]  mapped (incl journal view):320
+2018-03-13T03:14:06.364+0000 [clientcursormon]  connections:2
+2018-03-13T03:19:06.377+0000 [clientcursormon] mem (MB) res:59 virt:541
+2018-03-13T03:19:06.377+0000 [clientcursormon]  mapped (incl journal view):320
+2018-03-13T03:19:06.377+0000 [clientcursormon]  connections:2
+2018-03-13T03:24:06.391+0000 [clientcursormon] mem (MB) res:59 virt:541
+2018-03-13T03:24:06.391+0000 [clientcursormon]  mapped (incl journal view):320
+2018-03-13T03:24:06.391+0000 [clientcursormon]  connections:2
+2018-03-13T03:29:06.404+0000 [clientcursormon] mem (MB) res:59 virt:541
+2018-03-13T03:29:06.404+0000 [clientcursormon]  mapped (incl journal view):320
+2018-03-13T03:29:06.404+0000 [clientcursormon]  connections:2
+2018-03-13T03:34:06.418+0000 [clientcursormon] mem (MB) res:59 virt:541
+2018-03-13T03:34:06.419+0000 [clientcursormon]  mapped (incl journal view):320
+2018-03-13T03:34:06.419+0000 [clientcursormon]  connections:2
+2018-03-13T03:39:06.433+0000 [clientcursormon] mem (MB) res:59 virt:541
+2018-03-13T03:39:06.433+0000 [clientcursormon]  mapped (incl journal view):320
+2018-03-13T03:39:06.433+0000 [clientcursormon]  connections:2
+2018-03-13T03:44:06.447+0000 [clientcursormon] mem (MB) res:59 virt:541
+2018-03-13T03:44:06.448+0000 [clientcursormon]  mapped (incl journal view):320
+2018-03-13T03:44:06.448+0000 [clientcursormon]  connections:2
+2018-03-13T03:49:06.461+0000 [clientcursormon] mem (MB) res:59 virt:541
+2018-03-13T03:49:06.462+0000 [clientcursormon]  mapped (incl journal view):320
+2018-03-13T03:49:06.462+0000 [clientcursormon]  connections:2
+2018-03-13T03:54:06.475+0000 [clientcursormon] mem (MB) res:59 virt:541
+2018-03-13T03:54:06.476+0000 [clientcursormon]  mapped (incl journal view):320
+2018-03-13T03:54:06.476+0000 [clientcursormon]  connections:2
+2018-03-13T03:59:06.490+0000 [clientcursormon] mem (MB) res:59 virt:541
+2018-03-13T03:59:06.490+0000 [clientcursormon]  mapped (incl journal view):320
+2018-03-13T03:59:06.490+0000 [clientcursormon]  connections:2
+2018-03-13T04:04:06.504+0000 [clientcursormon] mem (MB) res:59 virt:541
+2018-03-13T04:04:06.504+0000 [clientcursormon]  mapped (incl journal view):320
+2018-03-13T04:04:06.504+0000 [clientcursormon]  connections:2
+2018-03-13T04:09:06.519+0000 [clientcursormon] mem (MB) res:59 virt:541
+2018-03-13T04:09:06.519+0000 [clientcursormon]  mapped (incl journal view):320
+2018-03-13T04:09:06.519+0000 [clientcursormon]  connections:2
+2018-03-13T04:14:06.532+0000 [clientcursormon] mem (MB) res:59 virt:541
+2018-03-13T04:14:06.532+0000 [clientcursormon]  mapped (incl journal view):320
+2018-03-13T04:14:06.532+0000 [clientcursormon]  connections:2
+2018-03-13T04:19:06.546+0000 [clientcursormon] mem (MB) res:59 virt:541
+2018-03-13T04:19:06.546+0000 [clientcursormon]  mapped (incl journal view):320
+2018-03-13T04:19:06.546+0000 [clientcursormon]  connections:2
+2018-03-13T04:24:06.560+0000 [clientcursormon] mem (MB) res:59 virt:541
+2018-03-13T04:24:06.561+0000 [clientcursormon]  mapped (incl journal view):320
+2018-03-13T04:24:06.561+0000 [clientcursormon]  connections:2
+2018-03-13T04:29:06.574+0000 [clientcursormon] mem (MB) res:59 virt:541
+2018-03-13T04:29:06.574+0000 [clientcursormon]  mapped (incl journal view):320
+2018-03-13T04:29:06.574+0000 [clientcursormon]  connections:2
+2018-03-13T04:34:06.587+0000 [clientcursormon] mem (MB) res:59 virt:541
+2018-03-13T04:34:06.587+0000 [clientcursormon]  mapped (incl journal view):320
+2018-03-13T04:34:06.587+0000 [clientcursormon]  connections:2
+2018-03-13T04:39:06.600+0000 [clientcursormon] mem (MB) res:59 virt:541
+2018-03-13T04:39:06.600+0000 [clientcursormon]  mapped (incl journal view):320
+2018-03-13T04:39:06.600+0000 [clientcursormon]  connections:2
+2018-03-13T04:44:06.613+0000 [clientcursormon] mem (MB) res:59 virt:541
+2018-03-13T04:44:06.613+0000 [clientcursormon]  mapped (incl journal view):320
+2018-03-13T04:44:06.613+0000 [clientcursormon]  connections:2
+2018-03-13T04:49:06.627+0000 [clientcursormon] mem (MB) res:59 virt:541
+2018-03-13T04:49:06.627+0000 [clientcursormon]  mapped (incl journal view):320
+2018-03-13T04:49:06.627+0000 [clientcursormon]  connections:2
+2018-03-13T04:54:06.641+0000 [clientcursormon] mem (MB) res:59 virt:541
+2018-03-13T04:54:06.641+0000 [clientcursormon]  mapped (incl journal view):320
+2018-03-13T04:54:06.641+0000 [clientcursormon]  connections:2
+2018-03-13T04:59:06.655+0000 [clientcursormon] mem (MB) res:59 virt:541
+2018-03-13T04:59:06.655+0000 [clientcursormon]  mapped (incl journal view):320
+2018-03-13T04:59:06.655+0000 [clientcursormon]  connections:2
+2018-03-13T05:04:06.669+0000 [clientcursormon] mem (MB) res:59 virt:541
+2018-03-13T05:04:06.669+0000 [clientcursormon]  mapped (incl journal view):320
+2018-03-13T05:04:06.669+0000 [clientcursormon]  connections:2
+2018-03-13T05:09:06.682+0000 [clientcursormon] mem (MB) res:59 virt:541
+2018-03-13T05:09:06.682+0000 [clientcursormon]  mapped (incl journal view):320
+2018-03-13T05:09:06.682+0000 [clientcursormon]  connections:2
+2018-03-13T05:14:06.696+0000 [clientcursormon] mem (MB) res:59 virt:541
+2018-03-13T05:14:06.696+0000 [clientcursormon]  mapped (incl journal view):320
+2018-03-13T05:14:06.696+0000 [clientcursormon]  connections:2
+2018-03-13T05:19:06.709+0000 [clientcursormon] mem (MB) res:59 virt:541
+2018-03-13T05:19:06.710+0000 [clientcursormon]  mapped (incl journal view):320
+2018-03-13T05:19:06.710+0000 [clientcursormon]  connections:2
+2018-03-13T05:24:06.723+0000 [clientcursormon] mem (MB) res:59 virt:541
+2018-03-13T05:24:06.723+0000 [clientcursormon]  mapped (incl journal view):320
+2018-03-13T05:24:06.723+0000 [clientcursormon]  connections:2
+2018-03-13T05:29:06.736+0000 [clientcursormon] mem (MB) res:59 virt:541
+2018-03-13T05:29:06.737+0000 [clientcursormon]  mapped (incl journal view):320
+2018-03-13T05:29:06.737+0000 [clientcursormon]  connections:2
+2018-03-13T05:34:06.750+0000 [clientcursormon] mem (MB) res:59 virt:541
+2018-03-13T05:34:06.751+0000 [clientcursormon]  mapped (incl journal view):320
+2018-03-13T05:34:06.751+0000 [clientcursormon]  connections:2
+2018-03-13T05:39:06.765+0000 [clientcursormon] mem (MB) res:59 virt:541
+2018-03-13T05:39:06.765+0000 [clientcursormon]  mapped (incl journal view):320
+2018-03-13T05:39:06.765+0000 [clientcursormon]  connections:2
+2018-03-13T05:44:06.778+0000 [clientcursormon] mem (MB) res:59 virt:541
+2018-03-13T05:44:06.779+0000 [clientcursormon]  mapped (incl journal view):320
+2018-03-13T05:44:06.779+0000 [clientcursormon]  connections:2
+2018-03-13T05:49:06.792+0000 [clientcursormon] mem (MB) res:59 virt:541
+2018-03-13T05:49:06.792+0000 [clientcursormon]  mapped (incl journal view):320
+2018-03-13T05:49:06.792+0000 [clientcursormon]  connections:2
+2018-03-13T05:54:06.805+0000 [clientcursormon] mem (MB) res:59 virt:541
+2018-03-13T05:54:06.805+0000 [clientcursormon]  mapped (incl journal view):320
+2018-03-13T05:54:06.805+0000 [clientcursormon]  connections:2
+2018-03-13T05:59:06.819+0000 [clientcursormon] mem (MB) res:59 virt:541
+2018-03-13T05:59:06.820+0000 [clientcursormon]  mapped (incl journal view):320
+2018-03-13T05:59:06.820+0000 [clientcursormon]  connections:2
+2018-03-13T06:04:06.834+0000 [clientcursormon] mem (MB) res:59 virt:541
+2018-03-13T06:04:06.834+0000 [clientcursormon]  mapped (incl journal view):320
+2018-03-13T06:04:06.834+0000 [clientcursormon]  connections:2
+2018-03-13T06:09:06.848+0000 [clientcursormon] mem (MB) res:59 virt:541
+2018-03-13T06:09:06.848+0000 [clientcursormon]  mapped (incl journal view):320
+2018-03-13T06:09:06.848+0000 [clientcursormon]  connections:2
+2018-03-13T06:14:06.861+0000 [clientcursormon] mem (MB) res:59 virt:541
+2018-03-13T06:14:06.862+0000 [clientcursormon]  mapped (incl journal view):320
+2018-03-13T06:14:06.862+0000 [clientcursormon]  connections:2
+2018-03-13T06:19:06.876+0000 [clientcursormon] mem (MB) res:59 virt:541
+2018-03-13T06:19:06.876+0000 [clientcursormon]  mapped (incl journal view):320
+2018-03-13T06:19:06.876+0000 [clientcursormon]  connections:2
+2018-03-13T06:24:06.890+0000 [clientcursormon] mem (MB) res:59 virt:541
+2018-03-13T06:24:06.890+0000 [clientcursormon]  mapped (incl journal view):320
+2018-03-13T06:24:06.890+0000 [clientcursormon]  connections:2
+2018-03-13T06:29:06.905+0000 [clientcursormon] mem (MB) res:59 virt:541
+2018-03-13T06:29:06.905+0000 [clientcursormon]  mapped (incl journal view):320
+2018-03-13T06:29:06.905+0000 [clientcursormon]  connections:2
+2018-03-13T06:34:06.918+0000 [clientcursormon] mem (MB) res:59 virt:541
+2018-03-13T06:34:06.918+0000 [clientcursormon]  mapped (incl journal view):320
+2018-03-13T06:34:06.918+0000 [clientcursormon]  connections:2
+2018-03-13T06:39:06.932+0000 [clientcursormon] mem (MB) res:59 virt:541
+2018-03-13T06:39:06.932+0000 [clientcursormon]  mapped (incl journal view):320
+2018-03-13T06:39:06.932+0000 [clientcursormon]  connections:2
+2018-03-13T06:44:06.945+0000 [clientcursormon] mem (MB) res:59 virt:541
+2018-03-13T06:44:06.945+0000 [clientcursormon]  mapped (incl journal view):320
+2018-03-13T06:44:06.945+0000 [clientcursormon]  connections:2
+2018-03-13T06:49:06.959+0000 [clientcursormon] mem (MB) res:59 virt:541
+2018-03-13T06:49:06.959+0000 [clientcursormon]  mapped (incl journal view):320
+2018-03-13T06:49:06.959+0000 [clientcursormon]  connections:2
+2018-03-13T06:54:06.972+0000 [clientcursormon] mem (MB) res:59 virt:541
+2018-03-13T06:54:06.973+0000 [clientcursormon]  mapped (incl journal view):320
+2018-03-13T06:54:06.973+0000 [clientcursormon]  connections:2
+2018-03-13T06:59:06.986+0000 [clientcursormon] mem (MB) res:59 virt:541
+2018-03-13T06:59:06.987+0000 [clientcursormon]  mapped (incl journal view):320
+2018-03-13T06:59:06.987+0000 [clientcursormon]  connections:2
+2018-03-13T07:04:07.000+0000 [clientcursormon] mem (MB) res:59 virt:541
+2018-03-13T07:04:07.000+0000 [clientcursormon]  mapped (incl journal view):320
+2018-03-13T07:04:07.000+0000 [clientcursormon]  connections:2
+2018-03-13T07:09:07.013+0000 [clientcursormon] mem (MB) res:59 virt:541
+2018-03-13T07:09:07.014+0000 [clientcursormon]  mapped (incl journal view):320
+2018-03-13T07:09:07.014+0000 [clientcursormon]  connections:2
+2018-03-13T07:14:07.028+0000 [clientcursormon] mem (MB) res:59 virt:541
+2018-03-13T07:14:07.028+0000 [clientcursormon]  mapped (incl journal view):320
+2018-03-13T07:14:07.028+0000 [clientcursormon]  connections:2
+2018-03-13T07:19:07.041+0000 [clientcursormon] mem (MB) res:59 virt:541
+2018-03-13T07:19:07.041+0000 [clientcursormon]  mapped (incl journal view):320
+2018-03-13T07:19:07.042+0000 [clientcursormon]  connections:2
+2018-03-13T07:24:07.054+0000 [clientcursormon] mem (MB) res:59 virt:541
+2018-03-13T07:24:07.055+0000 [clientcursormon]  mapped (incl journal view):320
+2018-03-13T07:24:07.055+0000 [clientcursormon]  connections:2
+2018-03-13T07:29:07.067+0000 [clientcursormon] mem (MB) res:59 virt:541
+2018-03-13T07:29:07.068+0000 [clientcursormon]  mapped (incl journal view):320
+2018-03-13T07:29:07.068+0000 [clientcursormon]  connections:2
+2018-03-13T07:34:07.081+0000 [clientcursormon] mem (MB) res:59 virt:541
+2018-03-13T07:34:07.081+0000 [clientcursormon]  mapped (incl journal view):320
+2018-03-13T07:34:07.081+0000 [clientcursormon]  connections:2
+2018-03-13T07:39:07.095+0000 [clientcursormon] mem (MB) res:59 virt:541
+2018-03-13T07:39:07.095+0000 [clientcursormon]  mapped (incl journal view):320
+2018-03-13T07:39:07.095+0000 [clientcursormon]  connections:2
+2018-03-13T07:44:07.110+0000 [clientcursormon] mem (MB) res:59 virt:541
+2018-03-13T07:44:07.111+0000 [clientcursormon]  mapped (incl journal view):320
+2018-03-13T07:44:07.111+0000 [clientcursormon]  connections:2
+2018-03-13T07:49:07.124+0000 [clientcursormon] mem (MB) res:59 virt:541
+2018-03-13T07:49:07.125+0000 [clientcursormon]  mapped (incl journal view):320
+2018-03-13T07:49:07.125+0000 [clientcursormon]  connections:2
+2018-03-13T07:54:07.139+0000 [clientcursormon] mem (MB) res:59 virt:541
+2018-03-13T07:54:07.139+0000 [clientcursormon]  mapped (incl journal view):320
+2018-03-13T07:54:07.139+0000 [clientcursormon]  connections:2
+2018-03-13T07:59:07.153+0000 [clientcursormon] mem (MB) res:59 virt:541
+2018-03-13T07:59:07.153+0000 [clientcursormon]  mapped (incl journal view):320
+2018-03-13T07:59:07.153+0000 [clientcursormon]  connections:2
+2018-03-13T08:04:07.167+0000 [clientcursormon] mem (MB) res:59 virt:541
+2018-03-13T08:04:07.168+0000 [clientcursormon]  mapped (incl journal view):320
+2018-03-13T08:04:07.168+0000 [clientcursormon]  connections:2
+2018-03-13T08:09:07.181+0000 [clientcursormon] mem (MB) res:59 virt:541
+2018-03-13T08:09:07.182+0000 [clientcursormon]  mapped (incl journal view):320
+2018-03-13T08:09:07.182+0000 [clientcursormon]  connections:2
+2018-03-13T08:14:07.195+0000 [clientcursormon] mem (MB) res:59 virt:541
+2018-03-13T08:14:07.195+0000 [clientcursormon]  mapped (incl journal view):320
+2018-03-13T08:14:07.195+0000 [clientcursormon]  connections:2
+2018-03-13T08:19:07.208+0000 [clientcursormon] mem (MB) res:59 virt:541
+2018-03-13T08:19:07.208+0000 [clientcursormon]  mapped (incl journal view):320
+2018-03-13T08:19:07.208+0000 [clientcursormon]  connections:2
+2018-03-13T08:24:07.222+0000 [clientcursormon] mem (MB) res:59 virt:541
+2018-03-13T08:24:07.222+0000 [clientcursormon]  mapped (incl journal view):320
+2018-03-13T08:24:07.222+0000 [clientcursormon]  connections:2
+2018-03-13T08:29:07.237+0000 [clientcursormon] mem (MB) res:58 virt:541
+2018-03-13T08:29:07.237+0000 [clientcursormon]  mapped (incl journal view):320
+2018-03-13T08:29:07.237+0000 [clientcursormon]  connections:2
+2018-03-13T08:34:07.251+0000 [clientcursormon] mem (MB) res:58 virt:541
+2018-03-13T08:34:07.251+0000 [clientcursormon]  mapped (incl journal view):320
+2018-03-13T08:34:07.251+0000 [clientcursormon]  connections:2
+2018-03-13T08:39:07.265+0000 [clientcursormon] mem (MB) res:58 virt:541
+2018-03-13T08:39:07.265+0000 [clientcursormon]  mapped (incl journal view):320
+2018-03-13T08:39:07.265+0000 [clientcursormon]  connections:2
+2018-03-13T08:44:07.279+0000 [clientcursormon] mem (MB) res:58 virt:541
+2018-03-13T08:44:07.279+0000 [clientcursormon]  mapped (incl journal view):320
+2018-03-13T08:44:07.279+0000 [clientcursormon]  connections:2
+2018-03-13T08:49:07.292+0000 [clientcursormon] mem (MB) res:58 virt:541
+2018-03-13T08:49:07.292+0000 [clientcursormon]  mapped (incl journal view):320
+2018-03-13T08:49:07.292+0000 [clientcursormon]  connections:2
+2018-03-13T08:54:07.306+0000 [clientcursormon] mem (MB) res:58 virt:541
+2018-03-13T08:54:07.307+0000 [clientcursormon]  mapped (incl journal view):320
+2018-03-13T08:54:07.307+0000 [clientcursormon]  connections:2
+2018-03-13T08:59:07.320+0000 [clientcursormon] mem (MB) res:58 virt:541
+2018-03-13T08:59:07.321+0000 [clientcursormon]  mapped (incl journal view):320
+2018-03-13T08:59:07.321+0000 [clientcursormon]  connections:2
+2018-03-13T09:04:07.334+0000 [clientcursormon] mem (MB) res:58 virt:541
+2018-03-13T09:04:07.334+0000 [clientcursormon]  mapped (incl journal view):320
+2018-03-13T09:04:07.334+0000 [clientcursormon]  connections:2
+2018-03-13T09:09:07.347+0000 [clientcursormon] mem (MB) res:58 virt:541
+2018-03-13T09:09:07.348+0000 [clientcursormon]  mapped (incl journal view):320
+2018-03-13T09:09:07.348+0000 [clientcursormon]  connections:2
+2018-03-13T09:14:07.360+0000 [clientcursormon] mem (MB) res:58 virt:541
+2018-03-13T09:14:07.361+0000 [clientcursormon]  mapped (incl journal view):320
+2018-03-13T09:14:07.361+0000 [clientcursormon]  connections:2
+2018-03-13T09:19:07.374+0000 [clientcursormon] mem (MB) res:58 virt:541
+2018-03-13T09:19:07.374+0000 [clientcursormon]  mapped (incl journal view):320
+2018-03-13T09:19:07.374+0000 [clientcursormon]  connections:2
+2018-03-13T09:24:07.388+0000 [clientcursormon] mem (MB) res:58 virt:541
+2018-03-13T09:24:07.388+0000 [clientcursormon]  mapped (incl journal view):320
+2018-03-13T09:24:07.388+0000 [clientcursormon]  connections:2
+2018-03-13T09:29:07.402+0000 [clientcursormon] mem (MB) res:58 virt:541
+2018-03-13T09:29:07.402+0000 [clientcursormon]  mapped (incl journal view):320
+2018-03-13T09:29:07.402+0000 [clientcursormon]  connections:2
+2018-03-13T09:34:07.416+0000 [clientcursormon] mem (MB) res:58 virt:541
+2018-03-13T09:34:07.416+0000 [clientcursormon]  mapped (incl journal view):320
+2018-03-13T09:34:07.416+0000 [clientcursormon]  connections:2
+2018-03-13T09:39:07.430+0000 [clientcursormon] mem (MB) res:58 virt:541
+2018-03-13T09:39:07.431+0000 [clientcursormon]  mapped (incl journal view):320
+2018-03-13T09:39:07.431+0000 [clientcursormon]  connections:2
+2018-03-13T09:44:07.444+0000 [clientcursormon] mem (MB) res:58 virt:541
+2018-03-13T09:44:07.444+0000 [clientcursormon]  mapped (incl journal view):320
+2018-03-13T09:44:07.444+0000 [clientcursormon]  connections:2
+2018-03-13T09:49:07.459+0000 [clientcursormon] mem (MB) res:58 virt:541
+2018-03-13T09:49:07.459+0000 [clientcursormon]  mapped (incl journal view):320
+2018-03-13T09:49:07.459+0000 [clientcursormon]  connections:2
+2018-03-13T09:54:07.472+0000 [clientcursormon] mem (MB) res:58 virt:541
+2018-03-13T09:54:07.473+0000 [clientcursormon]  mapped (incl journal view):320
+2018-03-13T09:54:07.473+0000 [clientcursormon]  connections:2
+2018-03-13T09:59:07.486+0000 [clientcursormon] mem (MB) res:58 virt:541
+2018-03-13T09:59:07.487+0000 [clientcursormon]  mapped (incl journal view):320
+2018-03-13T09:59:07.487+0000 [clientcursormon]  connections:2
+2018-03-13T10:04:07.500+0000 [clientcursormon] mem (MB) res:58 virt:541
+2018-03-13T10:04:07.500+0000 [clientcursormon]  mapped (incl journal view):320
+2018-03-13T10:04:07.500+0000 [clientcursormon]  connections:2
+2018-03-13T10:09:07.514+0000 [clientcursormon] mem (MB) res:58 virt:541
+2018-03-13T10:09:07.514+0000 [clientcursormon]  mapped (incl journal view):320
+2018-03-13T10:09:07.514+0000 [clientcursormon]  connections:2
+2018-03-13T10:14:07.528+0000 [clientcursormon] mem (MB) res:58 virt:541
+2018-03-13T10:14:07.528+0000 [clientcursormon]  mapped (incl journal view):320
+2018-03-13T10:14:07.528+0000 [clientcursormon]  connections:2
+2018-03-13T10:19:07.541+0000 [clientcursormon] mem (MB) res:58 virt:541
+2018-03-13T10:19:07.542+0000 [clientcursormon]  mapped (incl journal view):320
+2018-03-13T10:19:07.542+0000 [clientcursormon]  connections:2
+2018-03-13T10:24:07.555+0000 [clientcursormon] mem (MB) res:58 virt:541
+2018-03-13T10:24:07.555+0000 [clientcursormon]  mapped (incl journal view):320
+2018-03-13T10:24:07.555+0000 [clientcursormon]  connections:2
+2018-03-13T10:29:07.568+0000 [clientcursormon] mem (MB) res:58 virt:541
+2018-03-13T10:29:07.569+0000 [clientcursormon]  mapped (incl journal view):320
+2018-03-13T10:29:07.569+0000 [clientcursormon]  connections:2
+2018-03-13T10:34:07.582+0000 [clientcursormon] mem (MB) res:58 virt:541
+2018-03-13T10:34:07.583+0000 [clientcursormon]  mapped (incl journal view):320
+2018-03-13T10:34:07.583+0000 [clientcursormon]  connections:2
+2018-03-13T10:39:07.596+0000 [clientcursormon] mem (MB) res:58 virt:541
+2018-03-13T10:39:07.596+0000 [clientcursormon]  mapped (incl journal view):320
+2018-03-13T10:39:07.596+0000 [clientcursormon]  connections:2
+2018-03-13T10:44:07.610+0000 [clientcursormon] mem (MB) res:58 virt:541
+2018-03-13T10:44:07.610+0000 [clientcursormon]  mapped (incl journal view):320
+2018-03-13T10:44:07.610+0000 [clientcursormon]  connections:2
+2018-03-13T10:49:07.624+0000 [clientcursormon] mem (MB) res:58 virt:541
+2018-03-13T10:49:07.625+0000 [clientcursormon]  mapped (incl journal view):320
+2018-03-13T10:49:07.625+0000 [clientcursormon]  connections:2
+2018-03-13T10:54:07.640+0000 [clientcursormon] mem (MB) res:58 virt:541
+2018-03-13T10:54:07.641+0000 [clientcursormon]  mapped (incl journal view):320
+2018-03-13T10:54:07.641+0000 [clientcursormon]  connections:2
+2018-03-13T10:59:07.654+0000 [clientcursormon] mem (MB) res:58 virt:541
+2018-03-13T10:59:07.654+0000 [clientcursormon]  mapped (incl journal view):320
+2018-03-13T10:59:07.654+0000 [clientcursormon]  connections:2
+2018-03-13T11:04:07.668+0000 [clientcursormon] mem (MB) res:58 virt:541
+2018-03-13T11:04:07.668+0000 [clientcursormon]  mapped (incl journal view):320
+2018-03-13T11:04:07.668+0000 [clientcursormon]  connections:2
+2018-03-13T11:09:07.681+0000 [clientcursormon] mem (MB) res:58 virt:541
+2018-03-13T11:09:07.681+0000 [clientcursormon]  mapped (incl journal view):320
+2018-03-13T11:09:07.681+0000 [clientcursormon]  connections:2
+2018-03-13T11:14:07.694+0000 [clientcursormon] mem (MB) res:58 virt:541
+2018-03-13T11:14:07.695+0000 [clientcursormon]  mapped (incl journal view):320
+2018-03-13T11:14:07.695+0000 [clientcursormon]  connections:2
+2018-03-13T11:19:07.708+0000 [clientcursormon] mem (MB) res:58 virt:541
+2018-03-13T11:19:07.708+0000 [clientcursormon]  mapped (incl journal view):320
+2018-03-13T11:19:07.708+0000 [clientcursormon]  connections:2
+2018-03-13T11:24:07.722+0000 [clientcursormon] mem (MB) res:58 virt:541
+2018-03-13T11:24:07.723+0000 [clientcursormon]  mapped (incl journal view):320
+2018-03-13T11:24:07.723+0000 [clientcursormon]  connections:2
+2018-03-13T11:29:07.736+0000 [clientcursormon] mem (MB) res:58 virt:541
+2018-03-13T11:29:07.737+0000 [clientcursormon]  mapped (incl journal view):320
+2018-03-13T11:29:07.737+0000 [clientcursormon]  connections:2
+2018-03-13T11:34:07.750+0000 [clientcursormon] mem (MB) res:58 virt:541
+2018-03-13T11:34:07.750+0000 [clientcursormon]  mapped (incl journal view):320
+2018-03-13T11:34:07.750+0000 [clientcursormon]  connections:2
+2018-03-13T11:39:07.764+0000 [clientcursormon] mem (MB) res:58 virt:541
+2018-03-13T11:39:07.764+0000 [clientcursormon]  mapped (incl journal view):320
+2018-03-13T11:39:07.764+0000 [clientcursormon]  connections:2
+2018-03-13T11:44:07.778+0000 [clientcursormon] mem (MB) res:58 virt:541
+2018-03-13T11:44:07.779+0000 [clientcursormon]  mapped (incl journal view):320
+2018-03-13T11:44:07.779+0000 [clientcursormon]  connections:2
+2018-03-13T11:49:07.792+0000 [clientcursormon] mem (MB) res:58 virt:541
+2018-03-13T11:49:07.792+0000 [clientcursormon]  mapped (incl journal view):320
+2018-03-13T11:49:07.792+0000 [clientcursormon]  connections:2
+2018-03-13T11:54:07.808+0000 [clientcursormon] mem (MB) res:58 virt:541
+2018-03-13T11:54:07.808+0000 [clientcursormon]  mapped (incl journal view):320
+2018-03-13T11:54:07.808+0000 [clientcursormon]  connections:2
+2018-03-13T11:59:07.822+0000 [clientcursormon] mem (MB) res:58 virt:541
+2018-03-13T11:59:07.822+0000 [clientcursormon]  mapped (incl journal view):320
+2018-03-13T11:59:07.822+0000 [clientcursormon]  connections:2
+2018-03-13T12:04:07.835+0000 [clientcursormon] mem (MB) res:58 virt:541
+2018-03-13T12:04:07.836+0000 [clientcursormon]  mapped (incl journal view):320
+2018-03-13T12:04:07.836+0000 [clientcursormon]  connections:2
+2018-03-13T12:09:07.849+0000 [clientcursormon] mem (MB) res:58 virt:541
+2018-03-13T12:09:07.849+0000 [clientcursormon]  mapped (incl journal view):320
+2018-03-13T12:09:07.849+0000 [clientcursormon]  connections:2
+2018-03-13T12:14:07.863+0000 [clientcursormon] mem (MB) res:58 virt:541
+2018-03-13T12:14:07.863+0000 [clientcursormon]  mapped (incl journal view):320
+2018-03-13T12:14:07.863+0000 [clientcursormon]  connections:2
+2018-03-13T12:19:07.877+0000 [clientcursormon] mem (MB) res:58 virt:541
+2018-03-13T12:19:07.877+0000 [clientcursormon]  mapped (incl journal view):320
+2018-03-13T12:19:07.877+0000 [clientcursormon]  connections:2
+2018-03-13T12:24:07.890+0000 [clientcursormon] mem (MB) res:58 virt:541
+2018-03-13T12:24:07.890+0000 [clientcursormon]  mapped (incl journal view):320
+2018-03-13T12:24:07.890+0000 [clientcursormon]  connections:2
+2018-03-13T12:29:07.904+0000 [clientcursormon] mem (MB) res:58 virt:541
+2018-03-13T12:29:07.904+0000 [clientcursormon]  mapped (incl journal view):320
+2018-03-13T12:29:07.904+0000 [clientcursormon]  connections:2
+2018-03-13T12:34:07.917+0000 [clientcursormon] mem (MB) res:58 virt:541
+2018-03-13T12:34:07.918+0000 [clientcursormon]  mapped (incl journal view):320
+2018-03-13T12:34:07.918+0000 [clientcursormon]  connections:2
+2018-03-13T12:39:07.932+0000 [clientcursormon] mem (MB) res:58 virt:541
+2018-03-13T12:39:07.932+0000 [clientcursormon]  mapped (incl journal view):320
+2018-03-13T12:39:07.932+0000 [clientcursormon]  connections:2
+2018-03-13T12:44:07.945+0000 [clientcursormon] mem (MB) res:58 virt:541
+2018-03-13T12:44:07.946+0000 [clientcursormon]  mapped (incl journal view):320
+2018-03-13T12:44:07.946+0000 [clientcursormon]  connections:2
+2018-03-13T12:49:07.959+0000 [clientcursormon] mem (MB) res:58 virt:541
+2018-03-13T12:49:07.959+0000 [clientcursormon]  mapped (incl journal view):320
+2018-03-13T12:49:07.959+0000 [clientcursormon]  connections:2
+2018-03-13T12:54:07.973+0000 [clientcursormon] mem (MB) res:58 virt:541
+2018-03-13T12:54:07.973+0000 [clientcursormon]  mapped (incl journal view):320
+2018-03-13T12:54:07.973+0000 [clientcursormon]  connections:2
+2018-03-13T12:59:07.987+0000 [clientcursormon] mem (MB) res:58 virt:541
+2018-03-13T12:59:07.987+0000 [clientcursormon]  mapped (incl journal view):320
+2018-03-13T12:59:07.987+0000 [clientcursormon]  connections:2
+2018-03-13T13:04:08.001+0000 [clientcursormon] mem (MB) res:58 virt:541
+2018-03-13T13:04:08.001+0000 [clientcursormon]  mapped (incl journal view):320
+2018-03-13T13:04:08.001+0000 [clientcursormon]  connections:2
+2018-03-13T13:09:08.014+0000 [clientcursormon] mem (MB) res:58 virt:541
+2018-03-13T13:09:08.014+0000 [clientcursormon]  mapped (incl journal view):320
+2018-03-13T13:09:08.014+0000 [clientcursormon]  connections:2
+2018-03-13T13:14:08.027+0000 [clientcursormon] mem (MB) res:58 virt:541
+2018-03-13T13:14:08.027+0000 [clientcursormon]  mapped (incl journal view):320
+2018-03-13T13:14:08.028+0000 [clientcursormon]  connections:2
+2018-03-13T13:19:08.041+0000 [clientcursormon] mem (MB) res:58 virt:541
+2018-03-13T13:19:08.041+0000 [clientcursormon]  mapped (incl journal view):320
+2018-03-13T13:19:08.042+0000 [clientcursormon]  connections:2
+2018-03-13T13:24:08.055+0000 [clientcursormon] mem (MB) res:58 virt:541
+2018-03-13T13:24:08.055+0000 [clientcursormon]  mapped (incl journal view):320
+2018-03-13T13:24:08.055+0000 [clientcursormon]  connections:2
+2018-03-13T13:29:08.070+0000 [clientcursormon] mem (MB) res:58 virt:541
+2018-03-13T13:29:08.070+0000 [clientcursormon]  mapped (incl journal view):320
+2018-03-13T13:29:08.070+0000 [clientcursormon]  connections:2
+2018-03-13T13:34:08.085+0000 [clientcursormon] mem (MB) res:58 virt:541
+2018-03-13T13:34:08.086+0000 [clientcursormon]  mapped (incl journal view):320
+2018-03-13T13:34:08.086+0000 [clientcursormon]  connections:2
+2018-03-13T13:39:08.100+0000 [clientcursormon] mem (MB) res:58 virt:541
+2018-03-13T13:39:08.100+0000 [clientcursormon]  mapped (incl journal view):320
+2018-03-13T13:39:08.100+0000 [clientcursormon]  connections:2
+2018-03-13T13:44:08.115+0000 [clientcursormon] mem (MB) res:58 virt:541
+2018-03-13T13:44:08.116+0000 [clientcursormon]  mapped (incl journal view):320
+2018-03-13T13:44:08.116+0000 [clientcursormon]  connections:2
+2018-03-13T13:49:08.129+0000 [clientcursormon] mem (MB) res:58 virt:541
+2018-03-13T13:49:08.130+0000 [clientcursormon]  mapped (incl journal view):320
+2018-03-13T13:49:08.130+0000 [clientcursormon]  connections:2
+2018-03-13T13:54:08.144+0000 [clientcursormon] mem (MB) res:58 virt:541
+2018-03-13T13:54:08.144+0000 [clientcursormon]  mapped (incl journal view):320
+2018-03-13T13:54:08.144+0000 [clientcursormon]  connections:2
+2018-03-13T13:59:08.161+0000 [clientcursormon] mem (MB) res:58 virt:541
+2018-03-13T13:59:08.161+0000 [clientcursormon]  mapped (incl journal view):320
+2018-03-13T13:59:08.161+0000 [clientcursormon]  connections:2
+2018-03-13T14:04:08.175+0000 [clientcursormon] mem (MB) res:58 virt:541
+2018-03-13T14:04:08.175+0000 [clientcursormon]  mapped (incl journal view):320
+2018-03-13T14:04:08.175+0000 [clientcursormon]  connections:2
+2018-03-13T14:09:08.189+0000 [clientcursormon] mem (MB) res:58 virt:541
+2018-03-13T14:09:08.189+0000 [clientcursormon]  mapped (incl journal view):320
+2018-03-13T14:09:08.189+0000 [clientcursormon]  connections:2
+2018-03-13T14:14:08.203+0000 [clientcursormon] mem (MB) res:58 virt:541
+2018-03-13T14:14:08.203+0000 [clientcursormon]  mapped (incl journal view):320
+2018-03-13T14:14:08.203+0000 [clientcursormon]  connections:2
+2018-03-13T14:19:08.216+0000 [clientcursormon] mem (MB) res:58 virt:541
+2018-03-13T14:19:08.217+0000 [clientcursormon]  mapped (incl journal view):320
+2018-03-13T14:19:08.217+0000 [clientcursormon]  connections:2
+2018-03-13T14:24:08.232+0000 [clientcursormon] mem (MB) res:58 virt:541
+2018-03-13T14:24:08.233+0000 [clientcursormon]  mapped (incl journal view):320
+2018-03-13T14:24:08.233+0000 [clientcursormon]  connections:2
+2018-03-13T14:25:16.473+0000 [conn2] end connection 127.0.0.1:49124 (1 connection now open)
+2018-03-13T14:25:16.473+0000 [conn1] end connection 127.0.0.1:49114 (0 connections now open)
+2018-03-13T14:25:16.614+0000 [signalProcessingThread] got signal 15 (Terminated), will terminate after current cmd ends
+2018-03-13T14:25:16.614+0000 [signalProcessingThread] now exiting
+2018-03-13T14:25:16.614+0000 [signalProcessingThread] dbexit: 
+2018-03-13T14:25:16.614+0000 [signalProcessingThread] shutdown: going to close listening sockets...
+2018-03-13T14:25:16.614+0000 [signalProcessingThread] closing listening socket: 8
+2018-03-13T14:25:16.614+0000 [signalProcessingThread] closing listening socket: 9
+2018-03-13T14:25:16.614+0000 [signalProcessingThread] removing socket file: /tmp/mongodb-27023.sock
+2018-03-13T14:25:16.614+0000 [signalProcessingThread] shutdown: going to flush diaglog...
+2018-03-13T14:25:16.614+0000 [signalProcessingThread] shutdown: going to close sockets...
+2018-03-13T14:25:16.614+0000 [signalProcessingThread] shutdown: waiting for fs preallocator...
+2018-03-13T14:25:16.614+0000 [signalProcessingThread] shutdown: lock for final commit...
+2018-03-13T14:25:16.614+0000 [signalProcessingThread] shutdown: final commit...
+2018-03-13T14:25:16.615+0000 [signalProcessingThread] shutdown: closing all files...
+2018-03-13T14:25:16.615+0000 [signalProcessingThread] closeAllFiles() finished
+2018-03-13T14:25:16.615+0000 [signalProcessingThread] journalCleanup...
+2018-03-13T14:25:16.615+0000 [signalProcessingThread] removeJournalFiles
+2018-03-13T14:25:16.617+0000 [signalProcessingThread] shutdown: removing fs lock...
+2018-03-13T14:25:16.617+0000 [signalProcessingThread] dbexit: really exiting now

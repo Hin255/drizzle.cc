@@ -1,0 +1,43 @@
+2018-03-12T17:09:07.209+0000 [initandlisten] MongoDB starting : pid=2528 port=27023 dbpath=/root/web_hannah/data/db 64-bit host=vultr.guest
+2018-03-12T17:09:07.209+0000 [initandlisten] db version v2.6.10
+2018-03-12T17:09:07.209+0000 [initandlisten] git version: nogitversion
+2018-03-12T17:09:07.209+0000 [initandlisten] OpenSSL version: OpenSSL 1.0.2g  1 Mar 2016
+2018-03-12T17:09:07.209+0000 [initandlisten] build info: Linux lgw01-12 3.19.0-25-generic #26~14.04.1-Ubuntu SMP Fri Jul 24 21:16:20 UTC 2015 x86_64 BOOST_LIB_VERSION=1_58
+2018-03-12T17:09:07.209+0000 [initandlisten] allocator: tcmalloc
+2018-03-12T17:09:07.209+0000 [initandlisten] options: { net: { port: 27023 }, storage: { dbPath: "/root/web_hannah/data/db" }, systemLog: { destination: "file", path: "/root/web_hannah/log/mongod.log" } }
+2018-03-12T17:09:07.217+0000 [initandlisten] journal dir=/root/web_hannah/data/db/journal
+2018-03-12T17:09:07.217+0000 [initandlisten] recover : no journal files present, no recovery needed
+2018-03-12T17:09:07.273+0000 [initandlisten] waiting for connections on port 27023
+2018-03-12T17:09:07.570+0000 [initandlisten] connection accepted from 127.0.0.1:48148 #1 (1 connection now open)
+2018-03-12T17:09:11.847+0000 [initandlisten] connection accepted from 127.0.0.1:48156 #2 (2 connections now open)
+2018-03-12T17:09:53.639+0000 [conn2] allocating new ns file /root/web_hannah/data/db/db.ns, filling with zeroes...
+2018-03-12T17:09:53.699+0000 [FileAllocator] allocating new datafile /root/web_hannah/data/db/db.0, filling with zeroes...
+2018-03-12T17:09:53.699+0000 [FileAllocator] creating directory /root/web_hannah/data/db/_tmp
+2018-03-12T17:09:53.701+0000 [FileAllocator] done allocating datafile /root/web_hannah/data/db/db.0, size: 64MB,  took 0 secs
+2018-03-12T17:09:53.702+0000 [conn2] build index on: db.data_id properties: { v: 1, key: { _id: 1 }, name: "_id_", ns: "db.data_id" }
+2018-03-12T17:09:53.702+0000 [conn2] 	 added index to empty collection
+2018-03-12T17:09:53.704+0000 [conn2] build index on: db.User properties: { v: 1, key: { _id: 1 }, name: "_id_", ns: "db.User" }
+2018-03-12T17:09:53.704+0000 [conn2] 	 added index to empty collection
+2018-03-12T17:10:07.320+0000 [clientcursormon] mem (MB) res:43 virt:542
+2018-03-12T17:10:07.320+0000 [clientcursormon]  mapped (incl journal view):320
+2018-03-12T17:10:07.320+0000 [clientcursormon]  connections:2
+2018-03-12T17:11:42.308+0000 [conn2] end connection 127.0.0.1:48156 (1 connection now open)
+2018-03-12T17:11:42.309+0000 [conn1] end connection 127.0.0.1:48148 (0 connections now open)
+2018-03-12T17:11:42.454+0000 [signalProcessingThread] got signal 15 (Terminated), will terminate after current cmd ends
+2018-03-12T17:11:42.454+0000 [signalProcessingThread] now exiting
+2018-03-12T17:11:42.454+0000 [signalProcessingThread] dbexit: 
+2018-03-12T17:11:42.454+0000 [signalProcessingThread] shutdown: going to close listening sockets...
+2018-03-12T17:11:42.454+0000 [signalProcessingThread] closing listening socket: 8
+2018-03-12T17:11:42.454+0000 [signalProcessingThread] closing listening socket: 9
+2018-03-12T17:11:42.454+0000 [signalProcessingThread] removing socket file: /tmp/mongodb-27023.sock
+2018-03-12T17:11:42.454+0000 [signalProcessingThread] shutdown: going to flush diaglog...
+2018-03-12T17:11:42.454+0000 [signalProcessingThread] shutdown: going to close sockets...
+2018-03-12T17:11:42.454+0000 [signalProcessingThread] shutdown: waiting for fs preallocator...
+2018-03-12T17:11:42.454+0000 [signalProcessingThread] shutdown: lock for final commit...
+2018-03-12T17:11:42.454+0000 [signalProcessingThread] shutdown: final commit...
+2018-03-12T17:11:42.455+0000 [signalProcessingThread] shutdown: closing all files...
+2018-03-12T17:11:42.455+0000 [signalProcessingThread] closeAllFiles() finished
+2018-03-12T17:11:42.455+0000 [signalProcessingThread] journalCleanup...
+2018-03-12T17:11:42.455+0000 [signalProcessingThread] removeJournalFiles
+2018-03-12T17:11:42.456+0000 [signalProcessingThread] shutdown: removing fs lock...
+2018-03-12T17:11:42.456+0000 [signalProcessingThread] dbexit: really exiting now
