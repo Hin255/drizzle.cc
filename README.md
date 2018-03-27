@@ -20,7 +20,7 @@
 - 上传文件过滤
 - 发私信
 
-#Linux配置文件
-- deploy.py 
+- Linux配置文件
+  - deploy.py 
 
 
